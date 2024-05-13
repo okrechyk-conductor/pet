@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Localhost Redirector",
+    "version": "1.0",
+    "description": "Redirects localhost URLs",
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["<all_urls>"]
+  }
+  
